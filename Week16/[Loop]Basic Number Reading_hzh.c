@@ -7,17 +7,14 @@ int main()
 	while(n){
 		char a[100];
 		scanf("%s",&a);
-		int p=strlen(a),s=0;
+		int p=strlen(a),s1=0,s2=0;
 		k=1;
 		for(i=p-1;i>=0;i--){
-			s+=k*(a[i]-48);
+			s1+=k*(a[i]-48);
+			s2+=k*(a[p-i-1]-48);
 			k*=l;
 		}
-		printf("%d ",s);s=0;k=1;
-		for(i=0;i<p;i++){
-			s+=k*(a[i]-48);
-			k*=l;
-		}printf("%d\n",s);
+		printf("%d %d\n",s1,s2);
 		n--;
 	}
 }
