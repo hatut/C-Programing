@@ -1,4 +1,4 @@
-//It's 队列 队列 队列 
+//It's queue ！
 #include<stdio.h>
 #include<string.h>
 int b[10000];
